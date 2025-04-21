@@ -8,6 +8,7 @@ body, h1, ul {
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+
 }
 
 /* Navbar */
@@ -47,6 +48,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.product-grid h1{
+    padding-left: 5px;
+}
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +74,7 @@ body {
     border-radius: 5px;
     text-align: center;
     position: relative;
-    
+
     gap: 20px;
 }
 
@@ -97,7 +101,7 @@ body {
     height: 200px; /* Adjust height for better consistency */
 }
 
-.product-button {
+/* .product-button {
     background-color: #e74c3c;
     color: #fff;
     border: none;
@@ -109,7 +113,7 @@ body {
 
 .product-button:hover {
     background-color: #c0392b;
-}
+} */
 
 /* Pseudo-elements - Sale badge */
 .product-card::before {
@@ -163,20 +167,21 @@ body {
 .cart{
     color: white;
     display: flex;
+    position: relative;
 }
 .cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
+    top:34px;
+    /* background-color: rgb(238, 65, 65); */
     margin-left: 27px;
     position: absolute;
-    font-size: 29px;
+    font-size: 22px;
 
 }
 .plantname_heading{
    display: flex;
    align-items: center;
    justify-content: center;
-    /* background-color: yellow; */
+ /* background-color: yellow; */
 }
 .plant_heading{
     width: 400px;

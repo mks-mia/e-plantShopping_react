@@ -1,4 +1,7 @@
-/* LandingPage.css */
+/* #root{
+  width: 100vw;
+  height: 100vh;
+}LandingPage.css */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +11,8 @@
 
 .landing-page {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
   background-color: #f8f8f8;
 }
 
@@ -37,9 +40,9 @@
 }
 
 .landing_content {
- margin-top: 430px;
+ /* margin-top: 430px;
   margin-left: 100px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   z-index: 1;
   text-align: center;
   /* background-color: red; */
