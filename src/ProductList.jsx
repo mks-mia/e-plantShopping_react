@@ -239,6 +239,10 @@ function ProductList({ onHomeClick }) {
         textDecoration: 'none',
     }
 
+    const isInCart = (plantName) => {
+        return cartItems.some(item => item.name === plantName);
+    };      
+
     const handleHomeClick = (e) => {
         e.preventDefault();
         onHomeClick();
@@ -317,7 +321,9 @@ function ProductList({ onHomeClick }) {
 {/* 3lines changed from div to p */}    <p className='product-title'>{plant.name}</p> 
                                         <p className='product-price'>{plant.cost}</p>
                                         <p className='product-description'>{plant.description}</p> <br></br>
-                                        <button className='product-button' onClick={()=>handleAddToCart(plant)}>Add To Cart</button>                                        
+                                        <button className={`${isInCart(plant.name)?"product-button.added-to-cart":"product-button"}`} 
+                                            onClick={()=>handleAddToCart(plant)} 
+                                            disabled={isInCart(plant.name)}>Add To Cart</button>                                        
                                     </div>
                                 ))}
                             </div>
